@@ -39,7 +39,7 @@ PDF Text:
 {extracted_text[:12000]}"""
 
     response = client.chat.completions.create(
-        model="gpt-4o-preview",
+        model="gpt-4o",
         messages=[
             {"role": "system", "content": "You are a professional PDF analysis assistant."},
             {"role": "user", "content": prompt}
